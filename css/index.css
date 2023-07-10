@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo" "title" "category" "events";
+  height: 90vh;
+  width: 25vw;
+}
+.navigation__events {
+  grid-area: events;
+  height: 50vh;
+  background: linear-gradient(#000, #000) no-repeat 0 0/calc(100% - 4.625rem) 0.125rem, linear-gradient(#000, #000) no-repeat 100% 100%/calc(100% - 4.625rem) 0.125rem, linear-gradient(#000, #000) no-repeat 0 0/2.5px calc(100% - 2.75rem), linear-gradient(#000, #000) no-repeat 100% 100%/2.5px calc(100% - 2.71875rem), linear-gradient(30.5deg, transparent 2.34375rem, #000 2.375rem, #000 2.46875rem, #fff 2.5rem, #fff calc(100% - 2.5rem), #000 calc(100% - 2.46875rem), #000 calc(100% - 2.375rem), transparent calc(100% - 2.34375rem)) no-repeat;
+  opacity: 100;
+  transform: translate(-0.0625rem, 0.3125rem);
+  z-index: 0;
+}
+.navigation__category {
+  grid-area: category;
+  height: 15vh;
+  width: 25vw;
+}
+.navigation__category--list {
+  position: relative;
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  overflow: auto;
+  box-sizing: border-box;
+  line-height: 1;
+  list-style: none;
+  justify-content: flex-start;
+  padding: 0px;
+}
+.navigation__logo {
+  grid-area: logo;
+  height: 10vh;
+  width: 20vh;
+  background-color: aquamarine;
+}
+.navigation__title {
+  grid-area: title;
+  height: 10vh;
+  width: 20vh;
+}
+
+.hero-content {
+  align-self: center;
+  height: 60vh;
+  width: 60vw;
+  background-color: bisque;
+}/*# sourceMappingURL=index.css.map */
