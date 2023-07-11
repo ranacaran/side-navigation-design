@@ -71,6 +71,8 @@ body {
     grid-area: title;
     height: 10vh;
     width: 20vh;
+    font-weight: 900;
+    font-size: x-large;
   }
 }
 
@@ -78,15 +80,27 @@ body {
   &__button {
     background: transparent;
     border: none;
+    font-weight: 450;
   }
 }
 
 .hero-content {
   align-self: center;
-  height: 60vh;
+  height: 70vh;
   width: 65vw;
   background-color: bisque;
   margin-right: 2%;
+
+  &__wrapper {
+    height: 100%;
+    width: 100%;
+
+    &--text {
+      text-align: center;
+      font-size: xx-large;
+      font-weight: 800;
+    }
+  }
 }
 
 .container {
