@@ -10,6 +10,7 @@ body {
   grid-template-areas: "logo" "title" "category" "events";
   height: 90vh;
   width: 25vw;
+  margin-left: 2%;
 }
 .navigation__events {
   grid-area: events;
@@ -50,9 +51,29 @@ body {
   width: 20vh;
 }
 
+.list__button {
+  background: transparent;
+  border: none;
+}
+
 .hero-content {
   align-self: center;
   height: 60vh;
-  width: 60vw;
+  width: 65vw;
   background-color: bisque;
+  margin-right: 2%;
+}
+
+.container__picture {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=index.css.map */

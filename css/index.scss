@@ -6,21 +6,36 @@ body {
 .navigation {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows:1fr;
+  grid-template-rows: 1fr;
   grid-template-areas:
-  "logo"
-  "title"
-  "category"
-  "events";
+    "logo"
+    "title"
+    "category"
+    "events";
   height: 90vh;
   width: 25vw;
+  margin-left: 2%;
 
   &__events {
     grid-area: events;
     height: 50vh;
-    background: linear-gradient(#000,#000) no-repeat 0 0/calc(100% - 4.625rem) .125rem,linear-gradient(#000,#000) no-repeat 100% 100%/calc(100% - 4.625rem) .125rem,linear-gradient(#000,#000) no-repeat 0 0/2.5px calc(100% - 2.75rem),linear-gradient(#000,#000) no-repeat 100% 100%/2.5px calc(100% - 2.71875rem),linear-gradient(30.5deg,transparent 2.34375rem,#000 2.375rem,#000 2.46875rem,#fff 2.5rem,#fff calc(100% - 2.5rem),#000 calc(100% - 2.46875rem),#000 calc(100% - 2.375rem),transparent calc(100% - 2.34375rem)) no-repeat;
+    background: linear-gradient(#000, #000) no-repeat 0 0 / calc(100% - 4.625rem) 0.125rem,
+      linear-gradient(#000, #000) no-repeat 100% 100% / calc(100% - 4.625rem) 0.125rem, linear-gradient(#000, #000) no-repeat 0 0/2.5px calc(100% - 2.75rem),
+      linear-gradient(#000, #000) no-repeat 100% 100%/2.5px calc(100% - 2.71875rem),
+      linear-gradient(
+          30.5deg,
+          transparent 2.34375rem,
+          #000 2.375rem,
+          #000 2.46875rem,
+          #fff 2.5rem,
+          #fff calc(100% - 2.5rem),
+          #000 calc(100% - 2.46875rem),
+          #000 calc(100% - 2.375rem),
+          transparent calc(100% - 2.34375rem)
+        )
+        no-repeat;
     opacity: 100;
-    transform: translate(-.0625rem,.3125rem);
+    transform: translate(-0.0625rem, 0.3125rem);
     z-index: 0;
   }
 
@@ -57,12 +72,34 @@ body {
     height: 10vh;
     width: 20vh;
   }
+}
 
+.list {
+  &__button {
+    background: transparent;
+    border: none;
+  }
 }
 
 .hero-content {
   align-self: center;
   height: 60vh;
-  width: 60vw;
+  width: 65vw;
   background-color: bisque;
+  margin-right: 2%;
+}
+
+.container {
+  &__picture {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
 }
